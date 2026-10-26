@@ -4722,7 +4722,7 @@ function renderHome() {
   const opts = LESSONS.map((L, i) => `<option value="${i}">${esc(lessonLabel(L))}</option>`).join("");
   let html = `<p class="label">学籍番号（4桁）</p>`;
   html += `<p><input type="text" id="sid" inputmode="numeric" maxlength="4" autocomplete="off" value="${esc(studentId || load("studentId"))}"></p>`;
-  html += `<p class="label">練習するレッスン</p>`;
+  html += `<p class="label">練習するレッスンの範囲指定</p>`;
   html += `<div class="range"><span class="range-tag">はじめ</span><select id="from">${opts}</select></div>`;
   html += `<div class="range"><span class="range-tag">おわり</span><select id="to">${opts}</select></div>`;
   html += `<p class="sub" id="rangeInfo"></p>`;
